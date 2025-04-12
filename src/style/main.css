@@ -1,0 +1,643 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--Zircon);
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+
+header .flex {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+header button, header li {
+    border: none;
+    padding: 18px 50px;
+    border-radius: 20px;
+    background: none;
+    color: var(--Observatory);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+header button {
+    background: var(--Aqua-Squeeze);
+}
+
+
+.cta {
+    background: var(--Observatory);
+    color: var(--Zircon);
+    border: none;
+}
+
+
+/* Hero */
+.hero {
+    padding: 120px 0;
+}
+
+
+.hero .flex {
+    justify-content: center;
+}
+
+
+.hero .hero-txt h1 {
+    /* Display XL */
+    width: 648px;
+    color: var(--Mine-Shaft);
+}
+
+
+.hero .hero-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+.hero .hero-txt p {
+    /* Body L */
+    width: 648px;
+    color: var(--Mine-Shaft);
+}
+
+
+.hero .hero-txt .buttons button {
+    padding: 18px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.hero .hero-txt .buttons .secondary {
+    background: transparent;
+    border: solid 1px var(--Observatory);
+    color: var(--Observatory);
+}
+
+
+/* Partners */
+.partners hr{
+    background: var(--Alto);
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+    height: 1px;
+}
+
+
+.partners .flex {
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+
+/* Features */
+.features {
+    padding: 180px 0;
+}
+
+
+.features h1 {
+    text-align: center;
+}
+
+
+.features p {
+    color: var(--Mine-Shaft);
+    text-align: center;
+}
+
+
+.feature-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+
+.feature-cards .responsive > span {
+    padding: 20px;
+    background: var(--Aqua-Squeeze);
+    color: var(--Persimmon);
+    border-radius: 20px;
+    width: 70px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+.feature-cards .no-code > span {
+    padding: 20px;
+    background: var(--Light-Yellow);
+    color: var(--Sweet-Corn);
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+
+.feature-cards .no-code > span i {
+    font-size: 30px;
+}
+
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background: var(--White);
+    width: 370px;
+    height: 384px;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+
+
+.feature-card span {
+    padding: 20px;
+    background: var(--Mandys-Pink);
+    color: var(--Persimmon);
+    border-radius: 20px;
+    width: 60px;
+}
+
+
+.feature-card h3 {
+    color: var(--Mine-Shaft);
+}
+
+
+.feature-card p {
+    color: var(--Mine-Shaft);
+    width: 310px;
+}
+
+
+.feature-card h6 {
+    color: var(--Observatory);
+}
+
+
+.feature-card .flex {
+    gap: 10px;
+}
+
+
+/* Metrics */
+.metrics h1 {
+    text-align: center;
+}
+
+
+.metrics p {
+    padding: 30px 0;
+    text-align: center;
+    color: var(--Mine-Shaft);
+}
+
+
+.metric {
+    background: var(--White);
+    padding: 48px 16px;
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: solid 6px var(--Mandys-Pink);
+}
+
+
+.metric span {
+    width: 238px;
+    color: var(--Mine-Shaft);
+    text-align: center;
+}
+
+
+.metric h4 {
+    color: var(--Mine-Shaft);
+    width: 238px;
+    text-align: center;
+}
+
+
+.metrics .flex {
+    padding: 60px 0 120px;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* FeedBack */
+.feedbacks .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.txt h3 {
+    color: var(--Mine-Shaft);
+}
+
+
+.txt p {
+    color: var(--Mine-Shaft);
+}
+
+
+.comment {
+    background: var(--White);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 0 30px 0;
+}
+
+
+.comment main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.comment main p {
+    width: 310px;
+    color: var(--Mine-Shaft);
+    text-align: center;
+}
+
+
+.feedbacks .flex {
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 0 120px 0;
+}
+
+
+/* Plan */
+.plan h1 {
+    color: var(--Black);
+    text-align: center;
+}
+
+
+.plan p {
+    color: var(--Mine-Shaft);
+    text-align: center;
+}
+
+
+.plan-cards {
+    justify-content: space-between;
+    padding: 60px 0 120px;
+}
+
+
+.plan-cards .card {
+    background: var(--White);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.card h6 {
+    color: var(--Mine-Shaft);
+}
+
+
+.card h2 span {
+   color: var(--Mine-Shaft); 
+}
+
+
+.plan-cards .card h2 {
+     color: var(--Dark-Gray);
+}
+
+
+.plan-cards .card h4 {
+     color: var(--Mine-Shaft);
+}
+
+
+.plan-cards .card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0 0 0;
+}
+
+
+.plan-cards .card ul li i {
+     color: var(--Observatory);
+}
+
+.plan-cards .card ul li {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+    color: var(--Mine-Shaft);
+}
+
+
+.plan-cards .card button {
+    background: var(--Aqua-Squeeze);
+    border: none;
+    padding: 18px 108px;
+    border-radius: 20px;
+    color: var(--Observatory);
+    margin: 30px 0 0 0;
+    cursor: pointer;
+}
+
+
+.plan .plan-cards .enterprise li i,
+.plan .plan-cards .enterprise li,
+.plan .plan-cards .enterprise,
+.plan .plan-cards .enterprise h6,
+.plan .plan-cards .enterprise h2,
+.plan .plan-cards .enterprise h2 span,
+.plan .plan-cards .enterprise h4 {
+    color: var(--White);
+    background: var(--Observatory);
+}
+
+
+.plan .plan-cards .enterprise button {
+    background: var(--Zircon);
+    display: flex;
+    gap: 5px;
+}
+
+
+/* Get Landing Page */
+.get-landing {
+    padding: 60px 0;
+}
+
+
+.get-landing .landing-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+.get-landing .landing-txt h1 { 
+    color: var(--Mine-Shaft);
+    width: 466px;
+}
+
+
+.get-landing .landing-txt p {
+    color: var(--Mine-Shaft);
+    width: 466px;
+}
+
+
+.get-landing .landing-txt button {
+    padding: 18px 50px;
+    border: none;
+    border-radius: 20px;
+    background: var(--Observatory);
+    color: var(--White);
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.get-landing .flex {
+    justify-content: center;
+    gap: 60px;
+    padding: 0 0 0 60px;
+    border-radius: 20px;
+    width: fit-content;
+    background: var(--Mandys-Pink);
+}
+
+
+/* Contacts */
+.contacts .container {
+    background: var(--White);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+
+.contacts h1 {
+    color: var(--Mine-Shaft);
+    width: 465px;
+}
+
+
+.contacts p {
+    color: var(--Mine-Shaft);
+    width: 1050px;
+    padding: 10px 0 60px 0;
+}
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.contact-details h2 {
+    color: var(--Mine-Shaft);
+    gap: 5px;
+}
+
+
+.social {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 63px;
+    width: 465px;
+}
+
+
+.social-links {
+    gap: 16px;    
+}
+
+
+.social-media {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.contacts {
+    padding: 60px 0;
+}
+
+
+.contacts form {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+
+.contacts .wraper {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+form .field {
+    padding: 18px 20px;
+    border: solid 1px var(--Alto);
+    border-radius: 20px;
+    width: fit-content;
+
+    align-items: center;
+    justify-content: flex-start;    
+    gap: 12px;
+}
+
+
+.field input {
+    border: none;
+    outline: none;
+    width: 384px;
+}
+
+
+.field label {
+    width: 30px;
+    height: 20px;
+    padding: 0 10px 0 0;
+    border-right: solid 1px var(--Light-Blue);
+}
+
+
+.field label img {
+    height: 20px;
+}
+
+
+form button {
+    padding: 18px 50px;
+    background: var(--Observatory);
+    border: none;
+    color: var(--White);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background: var(--Mine-Shaft);
+    padding: 24px 0;
+}
+
+
+footer > .flex {
+    justify-content: space-between;
+}
+
+
+footer .f-social {
+    display: flex;
+    width: 176px;
+    gap: 16px;
+}
+
+
+footer .f-social img {
+    cursor: pointer;
+}
+
+
+
+footer h5 {
+    color: var(--Zircon);
+}

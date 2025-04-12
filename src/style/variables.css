@@ -1,0 +1,99 @@
+/* Typography */
+.display-2xl {
+    font-size: 90px;
+    font-weight: 700; 
+}
+
+
+.display-xl {
+    font-size: 67px;
+    font-weight: 700;
+}
+
+
+.display-l {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.display-m {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+.display-m-semibold {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+
+.display-s {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.display-xs {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+.display-x {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* body */
+.body-xl {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+.body-l {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+.body-m {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.body-s {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* Colors */
+:root {
+    /* Colors */
+    
+    /* Neutral */
+    --Zircon: #F8F9FF;
+    --Alto: #D8D8D8;
+    --Mine-Shaft: #2D2D2D;
+    
+    /* Call to Action */
+    --Observatory: #009379;
+    --Aqua-Squeeze: #E5F4F2;
+    
+    /* Secondary */
+    --Sweet-Corn: #F8D57E;
+    --Mandys-Pink: #F2BFAF;
+    --Persimmon: #FF6250;
+    
+    /* Others */
+    --White: #FFFFFF;
+    --Light-Yellow: #F8D57E20;
+    --Black: #000000;
+    --Dark-Gray: #3b3b3b;
+    --Light-Blue: #DBE3FF;
+}
