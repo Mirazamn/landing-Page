@@ -31,9 +31,33 @@ body {
 }
 
 
+.hero {
+    padding: 500px 0 0 0;
+}
+
+
 /* Header */
 header {
     padding: 20px 0;
+}
+
+
+.header-animation {
+    position: fixed;
+    top: -100px; /* Boshlang'ich holat */
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: var(--Zircon);
+    transition: top 0.5s ease, opacity 0.5s ease;
+    z-index: 1000;
+}
+
+
+.scroll-header {
+    top: 0; /* Ko‘rsatilgan holat */
+    opacity: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 

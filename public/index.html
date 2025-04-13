@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/style/main.css" />
     <link rel="stylesheet" href="../src/style/variables.css" />
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    <script src="../src/app.js" defer></script>
+    
+    
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-
-
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,7 +20,9 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
+
+    <!-- Animated Header -->
+    <header class="header-animation">
       <div class="container flex">
         <a href="./index.html">
           <img src="../src/asstes/images/Logo.svg" alt="" />
@@ -37,6 +38,33 @@
           </a>
 
           <a href="#">
+            <button class="display-x cta">
+              <i class="fa-solid fa-rocket"></i>
+              Get Started
+            </button>
+          </a>
+        </ul>
+        <!-- /Nav -->
+      </div>
+    </header>
+    <!-- /Animated Header -->
+
+    <header>
+      <div class="container flex">
+        <a href="./index.html">
+          <img src="../src/asstes/images/Logo.svg" alt="" />
+        </a>
+        <!-- Nav -->
+        <ul class="flex">
+          <a data-aos="fade-down" data-aos-delay="300" href="#contacts">
+            <li class="display-x">Contact</li>
+          </a>
+
+          <a data-aos="fade-down" data-aos-delay="200" href="#features">
+            <button class="display-x">How it works</button>
+          </a>
+
+          <a data-aos="fade-down" data-aos-delay="100" href="#">
             <button class="display-x cta">
               <i class="fa-solid fa-rocket"></i>
               Get Started
@@ -78,13 +106,13 @@
       <!-- Partners -->
       <section class="partners">
         <hr />
-        <div data-aos="fade-up" class="container flex">
-          <img src="../src/asstes/images/airbnb.svg" alt="" />
-          <img src="../src/asstes/images/google.svg" alt="" />
-          <img src="../src/asstes/images/amazon.svg" alt="" />
-          <img src="../src/asstes/images/microsoft.svg" alt="" />
-          <img src="../src/asstes/images/fedex.svg" alt="" />
-          <img src="../src/asstes/images/hubspot.svg" alt="" />
+        <div class="container flex">
+          <img data-aos="fade-up" data-aos-delay="100" src="../src/asstes/images/airbnb.svg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="100" src="../src/asstes/images/google.svg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="200" src="../src/asstes/images/amazon.svg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="200" src="../src/asstes/images/microsoft.svg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="300" src="../src/asstes/images/fedex.svg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="300" src="../src/asstes/images/hubspot.svg" alt="" />
         </div>
         <hr />
       </section>
@@ -112,7 +140,7 @@
                 ><h6 class="flex display-x">
                   Learn More
                   <img
-                    src="../src/asstes/Button-Icons/size=20-13.svg"
+                    src="../src/asstes/button-icons/size=20-13.svg"
                     alt=""
                   /></h6
               ></a>
@@ -120,7 +148,7 @@
 
             <div data-aos="fade-up" data-aos-delay="200" class="feature-card responsive">
               <span
-                ><img src="../src/asstes/UI Icons/BoundingBox.svg" alt=""
+                ><img src="../src/asstes/ui-icons/BoundingBox.svg" alt=""
               /></span>
               <h3 class="display-s">Responsive Design</h3>
               <p class="body-m">
@@ -132,7 +160,7 @@
                 ><h6 class="flex display-x">
                   Learn More
                   <img
-                    src="../src/asstes/Button-Icons/size=20-13.svg"
+                    src="../src/asstes/button-icons/size=20-13.svg"
                     alt=""
                   /></h6
               ></a>
@@ -150,7 +178,7 @@
                 ><h6 class="flex display-x">
                   Learn More
                   <img
-                    src="../src/asstes/Button-Icons/size=20-13.svg"
+                    src="../src/asstes/button-icons/size=20-13.svg"
                     alt=""
                   /></h6
               ></a>
@@ -171,22 +199,22 @@
 
           <!-- Cards -->
           <div class="flex">
-            <div data-aos="fade-up" data-aos-delay="100" class="metric">
+            <div data-aos="fade-up" data-aos-delay="400" class="metric">
               <span class="display-m">10k+</span>
               <h4 class="body-m">Website launched</h4>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="200" class="metric">
+            <div data-aos="fade-up" data-aos-delay="300" class="metric">
               <span class="display-m">931k+</span>
               <h4 class="body-m">Projects created with Anima</h4>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="300" class="metric">
+            <div data-aos="fade-up" data-aos-delay="200" class="metric">
               <span class="display-m">240k+</span>
               <h4 class="body-m">New users joined Anima</h4>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="400" class="metric">
+            <div data-aos="fade-up" data-aos-delay="100" class="metric">
               <span class="display-m">12k+</span>
               <h4 class="body-m">Teams used Anima</h4>
             </div>
@@ -368,7 +396,7 @@
                 <li class="display-x"><i class="fa-solid fa-check"></i>  Write feature details here </li>
               </ul>
 
-              <a href="#"><button class="display-x">Get Started <img src="../src/asstes/Button-Icons/size=16-13.svg" alt=""> </button></a>
+              <a href="#"><button class="display-x">Get Started <img src="../src/asstes/button-icons/size=16-13.svg" alt=""> </button></a>
             </div>
 
           </div>
@@ -400,27 +428,27 @@
             <div class="wraper flex">
               <div class="social flex">
                 <div class="contact-details">
-                  <h2 data-aos="fade-right" data-aos-delay="100" class="body-m flex"> <img src="../src/asstes/UI Icons/PhoneCall.svg" alt=""> +012 345 6789</h2>
-                  <h2 data-aos="fade-right" data-aos-delay="200" class="body-m flex"> <img src="../src/asstes/UI Icons/EnvelopeSimple.svg" alt="">Hello@animaapp.com</h2>                
+                  <h2 data-aos="fade-right" data-aos-delay="100" class="body-m flex"> <img src="../src/asstes/ui-icons/PhoneCall.svg" alt=""> +012 345 6789</h2>
+                  <h2 data-aos="fade-right" data-aos-delay="200" class="body-m flex"> <img src="../src/asstes/ui-icons/EnvelopeSimple.svg" alt="">Hello@animaapp.com</h2>                
                 </div>
   
                 <div data-aos="fade-right" data-aos-delay="300" class="social-media flex">
                   <h3 class="display-xs">Connect with us</h3>
                   <div class="social-links flex">
                     <a href="#">
-                      <img src="../src/asstes/Social Icons/Type=Circle, Style=Secondary, Social=Instagram.svg" alt="">
+                      <img src="../src/asstes/social-icons/Type=Circle, Style=Secondary, Social=Instagram.svg" alt="">
                     </a>
   
                     <a href="#">
-                      <img src="../src/asstes/Social Icons/Type=Circle, Style=Secondary, Social=Dribbble.svg" alt="">
+                      <img src="../src/asstes/social-icons/Type=Circle, Style=Secondary, Social=Dribbble.svg" alt="">
                     </a>
   
                     <a href="#">
-                      <img src="../src/asstes/Social Icons/Type=Circle, Style=Secondary, Social=Behance.svg" alt="">
+                      <img src="../src/asstes/social-icons/Type=Circle, Style=Secondary, Social=Behance.svg" alt="">
                     </a>
   
                     <a href="#">
-                      <img src="../src/asstes/Social Icons/Type=Circle, Style=Secondary, Social=Twitter.svg" alt="">
+                      <img src="../src/asstes/social-icons/Type=Circle, Style=Secondary, Social=Twitter.svg" alt="">
                     </a>
   
                   </div>
@@ -430,12 +458,12 @@
               <form class="flex">
   
                 <div data-aos="fade-up" class="field flex">
-                  <label for="name"><img src="../src/asstes/UI Icons/User.svg" alt=""></label>
+                  <label for="name"><img src="../src/asstes/ui-icons/User.svg" alt=""></label>
                   <input type="text" id="name" placeholder="Full Name" required>
                 </div>
   
                 <div data-aos="fade-up" data-aos-delay="100" class="field flex">
-                  <label for="email"><img src="../src/asstes/UI Icons/EnvelopeSimple.svg" alt=""></label>
+                  <label for="email"><img src="../src/asstes/ui-icons/EnvelopeSimple.svg" alt=""></label>
                   <input type="email" class="body-m" id="email" placeholder="Email" required>
                 </div>
   
@@ -458,19 +486,19 @@
         <h5 class="body-s">© 2023 Anima’s Landing Page Ui Kit. </h5>
         <div class="f-social">
           <a href="#">
-            <img src="../src/asstes/Social Icons/Type=Circle, Style=White, Social=YouTube.svg" alt="">
+            <img src="../src/asstes/social-icons/Type=Circle, Style=White, Social=YouTube.svg" alt="">
           </a>
 
           <a href="#">
-            <img src="../src/asstes/Social Icons/Type=Circle, Style=White, Social=Instagram.svg" alt="">
+            <img src="../src/asstes/social-icons/Type=Circle, Style=White, Social=Instagram.svg" alt="">
           </a>
 
           <a href="#">
-            <img src="../src/asstes/Social Icons/Type=Circle, Style=White, Social=Github.svg" alt="">
+            <img src="../src/asstes/social-icons/Type=Circle, Style=White, Social=Github.svg" alt="">
           </a>
 
           <a href="#">
-            <img src="../src/asstes/Social Icons/Type=Circle, Style=White, Social=LinkedIn.svg" alt="">
+            <img src="../src/asstes/social-icons/Type=Circle, Style=White, Social=LinkedIn.svg" alt="">
           </a>
 
         </div>
